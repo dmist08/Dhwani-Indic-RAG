@@ -1,0 +1,12 @@
+{
+  "status": "SUCCESS",
+  "base_model": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+  "dataset": "ai4bharat/MSMARCO-XI",
+  "samples_trained": 300,
+  "epochs": 2,
+  "batch_size": 16,
+  "training_time_sec": 12.79,
+  "loss_function": "MultipleNegativesRankingLoss",
+  "device": "cuda",
+  "output_dir": "K:\\Goa-Hackathon\\backend\\models\\fine_tuned_indic_embed"
+}

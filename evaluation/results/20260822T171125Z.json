@@ -1,0 +1,101 @@
+{
+  "meta": {
+    "target_root": "K:\\Goa-Hackathon",
+    "generation_backend": "local",
+    "generation_model_hint": "dhvani-indic-rag",
+    "language": "hin",
+    "split": "validation",
+    "num_answerable": 3,
+    "num_unanswerable": 3,
+    "num_examples": 6,
+    "num_chunks": 133,
+    "top_k": 5,
+    "seed": 42,
+    "num_errored": 0
+  },
+  "retrieval": {
+    "check": "retrieval (reference-based)",
+    "num_evaluated": 3,
+    "top_k": 5,
+    "cross_lingual": {
+      "recall_at_k": {
+        "1": 0.3333,
+        "3": 1.0,
+        "5": 1.0
+      },
+      "mrr": 0.6111
+    },
+    "same_language": {
+      "recall_at_k": {
+        "1": 0.3333,
+        "3": 1.0,
+        "5": 1.0
+      },
+      "mrr": 0.6111
+    }
+  },
+  "faithfulness": {
+    "check": "faithfulness / hallucination (reference-free, LLM-as-judge)",
+    "num_evaluated": 0,
+    "error": "OPENAI_API_KEY not configured -- judge-based checks skipped."
+  },
+  "correctness": {
+    "check": "correctness (reference-based, LLM-as-judge)",
+    "num_evaluated": 0,
+    "error": "OPENAI_API_KEY not configured -- judge-based checks skipped."
+  },
+  "reliability": {
+    "check": "reliability / \"lying factor\" (answerable-vs-answered 2x2)",
+    "num_answerable_evaluated": 3,
+    "num_unanswerable_evaluated": 3,
+    "false_refusal_rate": 0.0,
+    "false_refusal_examples": [],
+    "false_confidence_rate": 1.0,
+    "false_confidence_examples": [
+      {
+        "query": "what is wealth gov and econ definition",
+        "fabricated_answer": "Wealth is the value of all resources an individual or society owns. While countries measure their wealth in terms of GDP, individuals typically use net worth. [Doc 1]"
+      },
+      {
+        "query": "hexadecimal numbers to binary numbers",
+        "fabricated_answer": "To convert binary numbers into hexadecimal numbers we must first divide the binary number up into a 4-bit binary word which can have any value from 010 ( 00002 ) to 1510 ( 11112 ) representing the hex"
+      },
+      {
+        "query": "what is the scorebridge app used for",
+        "fabricated_answer": "The app interface is OK - nothing special. Scorebridge for mac: 01 and 5, and XHTML 1. [Doc 1]"
+      }
+    ]
+  },
+  "latency": {
+    "check": "latency",
+    "num_evaluated": 6,
+    "embed": {
+      "avg_ms": 95.93,
+      "p50_ms": 83.17,
+      "p95_ms": 181.49,
+      "p99_ms": 228.61
+    },
+    "search": {
+      "avg_ms": 1.59,
+      "p50_ms": 0.13,
+      "p95_ms": 8.85,
+      "p99_ms": 9.77
+    },
+    "retrieval_total": {
+      "avg_ms": 88.46,
+      "p50_ms": 93.53,
+      "p95_ms": 115.78,
+      "p99_ms": 115.93
+    },
+    "generation": {
+      "avg_ms": 9.48,
+      "p50_ms": 2.23,
+      "p95_ms": 36.91,
+      "p99_ms": 45.64
+    },
+    "retrieval_latency_budget_ms": 200,
+    "retrieval_within_budget": true,
+    "generation_latency_target_ms": 1500.0,
+    "generation_within_target": true
+  }
+}

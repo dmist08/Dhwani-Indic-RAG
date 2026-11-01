@@ -1,0 +1,46 @@
+# Environments & Secrets
+.env
+*.env
+.venv/
+env/
+venv/
+ENV/
+
+# Python Cache
+__pycache__/
+*.py[cod]
+*.class
+*.so
+.pytest_cache/
+
+# Node & Frontend
+node_modules/
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+npm-debug.log*
+yarn-debug.log*
+
+# Large Datasets & Corpus Files (>100MB)
+data/*.json
+data/*.npz
+data/*.pkl
+data/cache/
+data/qdrant_db/
+data/raw/
+*.mp4
+
+# Model Checkpoints & Large Weights (>100MB)
+models/**/*.safetensors
+models/**/*.bin
+models/**/*.pt
+models/**/*.onnx
+models/**/*.h5
+
+# Vector Store Caches & Large Logs
+*.faiss
+*.log
+
+# Operating System Files
+.DS_Store
+Thumbs.db

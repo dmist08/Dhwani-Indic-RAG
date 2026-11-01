@@ -1,0 +1,109 @@
+{
+  "meta": {
+    "target_root": "K:\\Goa-Hackathon",
+    "generation_backend": "local",
+    "generation_model_hint": "dhvani-indic-rag",
+    "language": "hin",
+    "split": "validation",
+    "num_answerable": 10,
+    "num_unanswerable": 10,
+    "num_examples": 20,
+    "num_chunks": 495,
+    "top_k": 5,
+    "seed": 42,
+    "num_errored": 0
+  },
+  "retrieval": {
+    "check": "retrieval (reference-based)",
+    "num_evaluated": 10,
+    "top_k": 5,
+    "cross_lingual": {
+      "recall_at_k": {
+        "1": 0.4,
+        "3": 0.8,
+        "5": 0.9
+      },
+      "mrr": 0.5867
+    },
+    "same_language": {
+      "recall_at_k": {
+        "1": 0.3,
+        "3": 0.8,
+        "5": 0.9
+      },
+      "mrr": 0.5367
+    }
+  },
+  "faithfulness": {
+    "check": "faithfulness / hallucination (reference-free, LLM-as-judge)",
+    "num_evaluated": 0,
+    "error": "OPENAI_API_KEY not configured -- judge-based checks skipped."
+  },
+  "correctness": {
+    "check": "correctness (reference-based, LLM-as-judge)",
+    "num_evaluated": 0,
+    "error": "OPENAI_API_KEY not configured -- judge-based checks skipped."
+  },
+  "reliability": {
+    "check": "reliability / \"lying factor\" (answerable-vs-answered 2x2)",
+    "num_answerable_evaluated": 10,
+    "num_unanswerable_evaluated": 10,
+    "false_refusal_rate": 0.0,
+    "false_refusal_examples": [],
+    "false_confidence_rate": 0.8,
+    "false_confidence_examples": [
+      {
+        "query": "how much ethanol in petrol uk",
+        "fabricated_answer": "The Qinetic report for DfT found current (2010) usage of ethanol in petrol in the UK is low (equivalent to 2. [Doc 1]"
+      },
+      {
+        "query": "how much does it cost to repave a double driveway",
+        "fabricated_answer": "In addition, the size of your driveway will play a role in determining your total cost. [Doc 1]"
+      },
+      {
+        "query": "how to become an lvn",
+        "fabricated_answer": "Getting the Education Necessary to Become an LVN. Obtain your high school diploma or GED. [Doc 1]"
+      },
+      {
+        "query": "how to change your flight without paying",
+        "fabricated_answer": "Award tickets can be changed without fee 8 days or more before departure; Otherwise a $75 change fee applies. [Doc 1]"
+      },
+      {
+        "query": "are katydids grasshoppers",
+        "fabricated_answer": "Members of this family are sometimes commonly called long-horned grasshoppers, but katydids are more closely related to crickets. [Doc 1]"
+      }
+    ]
+  },
+  "latency": {
+    "check": "latency",
+    "num_evaluated": 20,
+    "embed": {
+      "avg_ms": 56.9,
+      "p50_ms": 54.77,
+      "p95_ms": 74.76,
+      "p99_ms": 83.57
+    },
+    "search": {
+      "avg_ms": 1.62,
+      "p50_ms": 0.15,
+      "p95_ms": 0.18,
+      "p99_ms": 36.21
+    },
+    "retrieval_total": {
+      "avg_ms": 61.54,
+      "p50_ms": 56.44,
+      "p95_ms": 89.38,
+      "p99_ms": 106.89
+    },
+    "generation": {
+      "avg_ms": 252.39,
+      "p50_ms": 0.33,
+      "p95_ms": 1354.12,
+      "p99_ms": 1623.81
+    },
+    "retrieval_latency_budget_ms": 200,
+    "retrieval_within_budget": true,
+    "generation_latency_target_ms": 1500.0,
+    "generation_within_target": true
+  }
+}

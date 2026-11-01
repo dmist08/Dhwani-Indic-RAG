@@ -1,0 +1,4 @@
+LATENCY_BUDGET_MS = 200
+GENERATION_BACKEND = "local"
+GENERATION_MODEL = "dhvani-indic-rag"
+LOCAL_GENERATION_MODEL = "dhvani-indic-rag"

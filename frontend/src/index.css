@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+::selection {
+  background-color: #C0FE04;
+  color: #000000;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* Haoqi signature dotted border button effect */
+.dotted-box {
+  position: relative;
+}
+.dotted-box::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border: 1.5px dotted transparent;
+  pointer-events: none;
+  transition: border-color 0.15s ease-out;
+}
+.dotted-box:hover::before {
+  border-color: currentColor;
+}
+
+/* SVG Signature stroke drawing */
+.svg-sign__path {
+  stroke-dasharray: 600;
+  stroke-dashoffset: 600;
+  animation: svgDraw 2.4s cubic-bezier(0.65, 0, 0.35, 1) forwards;
+}
+
+@keyframes svgDraw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
