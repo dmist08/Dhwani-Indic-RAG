@@ -51,7 +51,7 @@ export default function PreloaderBoot({ onComplete, soundEnabled }) {
 
       <div className="w-full max-w-sm space-y-4 text-center z-10">
         <div className="text-[11px] text-white/50 tracking-widest uppercase">
-          [ SYSTEM BOOTING: HAOQI_CORE_V2 ]
+          [ SYSTEM BOOTING: DHVANI_CORE_V2 ]
         </div>
 
         <div className="text-4xl font-bold text-[#C0FE04] tracking-tighter">

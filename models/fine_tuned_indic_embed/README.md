@@ -359,14 +359,10 @@ You can finetune this model on your own dataset.
 *Clearly define terms in order to be accessible across audiences.*
 -->
 
-<!--
 ## Model Card Authors
 
-*Lists the people who create the model card, providing recognition and accountability for the detailed work that goes into its construction.*
--->
+- Dharmik Mistry ([@dmist08](https://github.com/dmist08))
 
-<!--
 ## Model Card Contact
 
-*Provides a way for people who have updates to the Model Card, suggestions, or questions, to contact the Model Card authors.*
--->
+- GitHub: [https://github.com/dmist08/Dhwani-Indic-RAG](https://github.com/dmist08/Dhwani-Indic-RAG)

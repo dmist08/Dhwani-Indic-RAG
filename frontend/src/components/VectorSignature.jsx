@@ -23,7 +23,7 @@ export default function VectorSignature({ className = "" }) {
         />
       </svg>
       <span className="font-mono text-[10px] uppercase opacity-50 block text-right text-[#C0FE04]">
-        Haoqi Wen // Signature
+        Dharmik Mistry // Signature
       </span>
     </div>
   );

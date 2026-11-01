@@ -232,8 +232,8 @@ The system provides multiple authentic Sarvam AI neural voices:
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/Kush5699/dhvani-indic-voice-rag.git
-cd dhvani-indic-voice-rag
+git clone https://github.com/dmist08/Dhwani-Indic-RAG.git
+cd Dhwani-Indic-RAG
 ```
 
 ### 2. Configure Environment Variables
@@ -276,3 +276,12 @@ Open `http://localhost:5173` in your browser.
 ## License
 
 This project is licensed under the MIT License.
+
+---
+
+## Author & Maintainer
+
+- **Dharmik Mistry**
+- **GitHub**: [@dmist08](https://github.com/dmist08)
+- **Repository**: [Dhwani-Indic-RAG](https://github.com/dmist08/Dhwani-Indic-RAG)
+

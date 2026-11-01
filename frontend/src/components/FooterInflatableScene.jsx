@@ -229,23 +229,20 @@ export default function FooterInflatableScene({ mousePos, soundEnabled, coords }
 
       {/* Bottom Status Bar matching video */}
       <div className="relative z-20 pt-16 border-t border-white/10 flex flex-col sm:flex-row justify-between items-center gap-4 font-mono text-xs uppercase opacity-80 pointer-events-auto">
-        <a href="mailto:curiosity.wen@gmail.com" className="hover:text-[#C0FE04] transition-colors">
-          CURIOSITY.WEN@GMAIL.COM
+        <a href="https://github.com/dmist08/Dhwani-Indic-RAG" target="_blank" rel="noreferrer" className="hover:text-[#C0FE04] transition-colors">
+          GITHUB: @DMIST08
         </a>
 
-        <span>HAOQI (C) 2026</span>
+        <span>DHARMIK MISTRY (C) 2026</span>
 
         <span className="hidden md:inline">{coords.x} X {coords.y} Y</span>
 
         <div className="flex gap-6">
-          <a href="https://twitter.com" target="_blank" rel="noreferrer" className="hover:text-[#C0FE04] transition-colors">
-            TWITTER/X
+          <a href="https://github.com/dmist08/Dhwani-Indic-RAG" target="_blank" rel="noreferrer" className="hover:text-[#C0FE04] transition-colors">
+            DHVANI INDIC RAG
           </a>
-          <a href="https://figma.com" target="_blank" rel="noreferrer" className="hover:text-[#C0FE04] transition-colors">
-            FIGMA
-          </a>
-          <a href="https://github.com" target="_blank" rel="noreferrer" className="hover:text-[#C0FE04] transition-colors">
-            GITHUB
+          <a href="https://github.com/dmist08" target="_blank" rel="noreferrer" className="hover:text-[#C0FE04] transition-colors">
+            GITHUB PROFILE
           </a>
         </div>
       </div>

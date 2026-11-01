@@ -1,8 +1,13 @@
 {
-  "name": "indic-voice-rag-frontend",
+  "name": "dhvani-indic-voice-rag",
   "private": true,
   "version": "1.0.0",
   "type": "module",
+  "author": "Dharmik Mistry <https://github.com/dmist08>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dmist08/Dhwani-Indic-RAG.git"
+  },
   "scripts": {
     "dev": "vite",
     "build": "vite build",
